@@ -1,0 +1,21 @@
+body {
+    height: 100vh;
+
+    margin: 0;
+    padding: 0;
+    background-color: black;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#drumset {
+    position: relative;
+}
+
+#drumset-bg {
+    width: 100%;
+    min-height: 60%;
+    max-height: 100%;
+}
