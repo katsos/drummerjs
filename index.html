@@ -15,9 +15,45 @@
 </head>
 <body>
 
-  <div id="drumset">
+  <span id="version">Alpha Version</span>
+
+  <drumset>
     <img id="drumset-bg" src="assets/img/drums_bg.jpg">
-  </div>
+
+    <!--<img class="hit-effect" id="crash-left">
+    <img class="hit-effect" id="crash-right">
+    <img class="hit-effect" id="tom-left">
+    <img class="hit-effect" id="tom-right">
+    <img class="hit-effect" id="hi-hat">
+    <img class="hit-effect" id="ride">
+    <img class="hit-effect" id="snare">
+    <img class="hit-effect" id="tom-floor">
+    <img class="hit-effect" id="kick">-->
+  </drumset>
+
+  <p class="info">Controls: 
+       <br>
+       Kick: B or Space | Snare: S | HiHat: H 
+       <br>
+       Tom-Left: W | Tom-Right: E | Tom-floor: R
+       <br>
+       Left Crash: I | Right Crash: O | Ride: J
+  </p>
+
+  <audio-sources>
+    <audio data-key="crash-left"  src="assets/aud/crash-left.wav"></audio>
+    <audio data-key="crash-right" src="assets/aud/crash-right.wav"></audio>
+
+    <audio data-key="hi-hat" src="assets/aud/hi-hat.wav"></audio>
+    <audio data-key="ride"   src="assets/aud/ride.wav"></audio>
+
+    <audio data-key="tom-left"  src="assets/aud/tom-left.wav"></audio>
+    <audio data-key="tom-right" src="assets/aud/tom-right.wav"></audio>
+    <audio data-key="tom-floor" src="assets/aud/tom-floor.wav"></audio>
+
+    <audio data-key="snare" src="assets/aud/snare.wav"></audio>
+    <audio data-key="kick"  src="assets/aud/kick.wav"></audio>  
+  </audio-sources>
 
   <script src="script.js"></script>
 </body>
