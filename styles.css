@@ -11,6 +11,24 @@ body {
   justify-content: center;
 }
 
+#loading {
+  position: absolute;
+  top: 0;
+  left: 0;
+
+  display: none;
+  z-index: 10;
+  width: 100vw;
+  height: 100vh;
+
+  background-color: black;
+  color: white;
+  text-align: center;
+  font-size: 10em;
+  font-weight: 700;
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+
 drumset {
   position: relative;
 }

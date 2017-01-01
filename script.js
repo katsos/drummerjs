@@ -14,6 +14,9 @@ const KEY = {
 }
 const keys  = document.querySelectorAll('.hit-effect');
 const audios = document.querySelectorAll('audio-sources audio');
+const loading = document.getElementById('loading');
+
+window.onload = () => loadSounds();
 
 window.addEventListener('keydown', (e) => {
 
@@ -51,6 +54,12 @@ window.addEventListener('keydown', (e) => {
     }
 
 });
+
+function loadSounds() {
+    loading.style.display = 'block';
+    audios.forEach( audio => audio.load() );
+    loading.style.display = 'none';
+}
 
 function playAnimate (drum) {
     triggerSound(drum);
