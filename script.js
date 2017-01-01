@@ -5,7 +5,7 @@ const KEY = {
     B: 66,
     E: 69,
     H: 72,
-    Ι: 73,
+    I: 73,
     O: 79,
     R: 82,
     S: 83,
@@ -16,6 +16,8 @@ const keys  = document.querySelectorAll('.hit-effect');
 const audios = document.querySelectorAll('audio-sources audio');
 
 window.addEventListener('keydown', (e) => {
+
+    e.preventDefault();
 
     switch(e.keyCode) {
         case KEY.SPACE:
@@ -31,7 +33,7 @@ window.addEventListener('keydown', (e) => {
         case KEY.S:
             playAnimate('snare');
             break;
-        case 73:
+        case KEY.I:
             playAnimate('crash-left');
             break;
         case KEY.O:
